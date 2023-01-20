@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_margin="16dp">
+
+
+    <Button
+        android:id="@+id/requestButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Request" />
+
+    <Button
+        android:id="@+id/timerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Timer" />
+
+    <Button
+        android:id="@+id/subjectButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subject" />
+
+    <Button
+        android:id="@+id/debounceButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Debounce" />
+
+    <Button
+        android:id="@+id/cardsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Discount Cards" />
+</LinearLayout>

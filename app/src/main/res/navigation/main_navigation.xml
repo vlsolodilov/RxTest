@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/main_fragment">
+
+    <fragment
+        android:id="@+id/main_fragment"
+        android:name="com.solodilov.rxtest.MainFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/fragment_main">
+
+        <action
+            android:id="@+id/action_main_fragment_to_request_fragment"
+            app:destination="@id/requestFragment" />
+        <action
+            android:id="@+id/action_main_fragment_to_timerFragment"
+            app:destination="@id/timerFragment" />
+        <action
+            android:id="@+id/action_main_fragment_to_subjectFragment"
+            app:destination="@id/subjectFragment" />
+        <action
+            android:id="@+id/action_main_fragment_to_debounceFragment"
+            app:destination="@id/debounceFragment" />
+        <action
+            android:id="@+id/action_main_fragment_to_cardsFragment"
+            app:destination="@id/cardsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/requestFragment"
+        android:name="com.solodilov.rxtest.request.RequestFragment"
+        android:label="RequestFragment"
+        tools:layout="@layout/fragment_request"/>
+    <fragment
+        android:id="@+id/timerFragment"
+        android:name="com.solodilov.rxtest.timer.TimerFragment"
+        android:label="TimerFragment"
+        tools:layout="@layout/fragment_timer" />
+    <fragment
+        android:id="@+id/subjectFragment"
+        android:name="com.solodilov.rxtest.subject.SubjectFragment"
+        android:label="SubjectFragment"
+        tools:layout="@layout/fragment_subject" />
+    <fragment
+        android:id="@+id/debounceFragment"
+        android:name="com.solodilov.rxtest.debounce.DebounceFragment"
+        android:label="DebounceFragment"
+        tools:layout="@layout/fragment_debounce" />
+    <fragment
+        android:id="@+id/cardsFragment"
+        android:name="com.solodilov.rxtest.card.CardsFragment"
+        android:label="CardsFragment"
+        tools:layout="@layout/fragment_cards" />
+
+</navigation>
